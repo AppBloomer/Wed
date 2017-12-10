@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_tabs"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framlay"
+        android:visibility="gone"
+        android:layout_above="@+id/view">
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framlay1"
+        android:visibility="gone"
+        android:layout_above="@+id/view">
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framlay2"
+        android:visibility="gone"
+        android:layout_above="@+id/view">
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framlay_link"
+        android:visibility="gone"
+        android:layout_above="@+id/view">
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:id="@+id/view"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:layout_above="@+id/rel_grou"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/elevation"
+        android:id="@+id/rel_tabs"
+        android:layout_alignParentBottom="true">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            android:minHeight="?attr/actionBarSize"
+            app:tabGravity="fill"
+            app:tabTextColor="#FFF"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/colorAccent"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/rel_grou"
+        android:gravity="center"
+        android:elevation="30dp"
+        android:visibility="gone"
+        android:background="@drawable/elevation"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img_fb"
+            android:src="@mipmap/ic_fb"
+
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/img_twit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/img_fb"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="60dp"
+            android:src="@mipmap/ic_fb" />
+        <ImageView
+            android:id="@+id/img_ins"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/ic_insta" />
+        <ImageView
+            android:id="@+id/linked_in"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/img_ins"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/ic_fb" />
+    </RelativeLayout>
+
+</RelativeLayout>

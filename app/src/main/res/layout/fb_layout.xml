@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_web"
+
+        >
+
+        <com.example.walinnsinnovation.wedapp.Libraries.ObservableWebView
+            android:id="@+id/FacebookWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <View
+            android:id="@+id/FacebookBackgroundView"
+            android:background="@color/facebookColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/facebookLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/white_fb"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+</RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
